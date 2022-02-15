@@ -1,4 +1,4 @@
-Project1/terraform/providers/registry.terraform.io/hashicorp/aws/3.71.0/windows_amd64/terraform-provider-aws_v3.71.0_x5.exe
+Project1/.terraform/providers/registry.terraform.io/hashicorp/aws/3.71.0/windows_amd64/terraform-provider-aws_v3.71.0_x5.exe
 Project1/providers.tf
 Project1/terraform.lock.hcl
 Project1/terraform.tfstate
@@ -9,13 +9,17 @@ Project1/terraform.tfvars
 
 Project2/
 Project2/terraform.lock.hcl
-Project2/terraform/providers/registry.terraform.io/hashicorp/aws/3.71.0/windows_amd64/terraform-provider-aws_v3.71.0_x5.exe
+Project2/.terraform/providers/registry.terraform.io/hashicorp/aws/3.71.0/windows_amd64/terraform-provider-aws_v3.71.0_x5.exe
 Project2/terraform.tfstate
 Project2/terraform.tfstate.backup
 
-Project3/terraform/providers/registry.terraform.io/hashicorp/aws/3.72.0/windows_amd64/terraform-provider-aws_v3.72.0_x5.exe
+Project3/.terraform/providers/registry.terraform.io/hashicorp/aws/3.72.0/windows_amd64/terraform-provider-aws_v3.72.0_x5.exe
 Project3/terraform.lock.hcl
 Project3/provider.tf
 Project3/terraform.tfstate
 Project3/terraform.tfstate.backup
 
+Project1/.terraform.lock.hcl
+Project1/.terraform/terraform.tfstate
+Project3/.terraform.lock.hcl
+Project 4/provider.tf
