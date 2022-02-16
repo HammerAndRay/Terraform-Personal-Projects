@@ -32,6 +32,7 @@ module "vpc" {
   }
 }
 
+#
 # This module will create the security group that allows icmp traffic
 module "security_group" {
   source  = "terraform-aws-modules/security-group/aws"
