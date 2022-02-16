@@ -18,6 +18,9 @@ jobs:
       # Marketplace: https://github.com/marketplace/actions/checkout
       - name: "Setup - Checkout"
         uses: actions/checkout@v2.1.0
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+        
 
       # Provides AWS credentials to Terraform
       # By default, Terraform checks the home directory for a .aws folder with a credential file
@@ -35,11 +38,17 @@ jobs:
       # Marketplace: https://github.com/marketplace/actions/hashicorp-setup-terraform
       - name: "Setup - Terraform CLI"
         uses: hashicorp/setup-terraform@v1.0.1
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
 
       # Init pulls credentials from the .aws/credentials file by default
       - name: "Run - Terraform Init"
         run: terraform init -input=false
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
 
       # Auto-approve prevents the requirement of human interaction
       - name: "Run - Terraform fmt -check"
         run: terraform fmt -check -input=false
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
