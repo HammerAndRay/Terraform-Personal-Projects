@@ -10,6 +10,9 @@ jobs:
   validate:
     name: Validate
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./Project4
     steps:
     - name: Check out code  
       uses: actions/checkout@v1
