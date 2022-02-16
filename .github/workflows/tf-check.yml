@@ -47,8 +47,15 @@ jobs:
         env:
           ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
 
-      # Auto-approve prevents the requirement of human interaction
+      # Run the format checker 
       - name: "Run - Terraform fmt -check"
         run: terraform fmt -check
         env:
           ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+      
+      # Run terrafrom plan
+      - name: "Run - Terraform plan"
+        run: terraform plan
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+
