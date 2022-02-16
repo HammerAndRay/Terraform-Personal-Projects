@@ -17,7 +17,7 @@ jobs:
       # Checkout the code
       # Marketplace: https://github.com/marketplace/actions/checkout
       - name: "Setup - Checkout"
-        uses: actions/checkout@v2.1.0
+        uses: actions/checkout@v2.273.1
 
       # Provides AWS credentials to Terraform
       # By default, Terraform checks the home directory for a .aws folder with a credential file
