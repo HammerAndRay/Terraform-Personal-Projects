@@ -49,6 +49,6 @@ jobs:
 
       # Auto-approve prevents the requirement of human interaction
       - name: "Run - Terraform fmt -check"
-        run: terraform fmt -check -input=false
+        run: terraform fmt -check
         env:
           ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
