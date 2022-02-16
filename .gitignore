@@ -23,7 +23,6 @@ Project3/terraform.tfstate.backup
 Project3/.terraform.lock.hcl
 
 
-Project4/provider.tf
 Project4/.terraform.lock.hcl
 Project4/.terraform/
 Project4/terraform.tfstate
