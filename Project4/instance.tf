@@ -12,7 +12,7 @@ data "aws_ami" "amazon-linux-2" {
   }
 
   filter {
-    name   = "name"
+    name  = "name"
     values = ["amzn2-ami-hvm*"]
   }
   owners = ["137112412989"] # Amazon
