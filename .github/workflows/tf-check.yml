@@ -1,4 +1,4 @@
-name: "Terraform Apply"
+name: "Terraform Validate"
 
 # Trigger when commits are pushed to the master branch
 on:
@@ -21,7 +21,7 @@ jobs:
       # Documentation: https://docs.aws.amazon.com/ses/latest/DeveloperGuide/create-shared-credentials-file.html
       - name: "Setup - Build AWS Credentials"
         run: |
-          working-directory: Project4
+          working-directory: ./Project4
           mkdir -p ~/.aws
           echo "[default]" > ~/.aws/credentials
           echo "aws_access_key_id = ${{ secrets.AWS_ACCESS_KEY_ID }}" >> ~/.aws/credentials
@@ -35,9 +35,9 @@ jobs:
       # Init pulls credentials from the .aws/credentials file by default
       - name: "Run - Terraform Init"
         run: terraform init -input=false
-        working-directory: Project4
+        working-directory: ./Project4
 
       # Auto-approve prevents the requirement of human interaction
       - name: "Run - Terraform fmt -check"
         run: terraform fmt -check -input=false
-        working-directory: Project4
+        working-directory: ./Project4
