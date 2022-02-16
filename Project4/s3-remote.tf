@@ -1,5 +1,6 @@
 # This file will create the s3 bucket and the dynamodb table that is needed for the remote s3 backend,
 # as well as the remote backend. https://www.terraform.io/language/settings/backends/s3 is the documentation.
+# Places into a subdirectory to avoid conflicts with other terrafrom destroy scripts.
 
 # This will create the S3 bucket that the Terraform state will be stored in.
 resource "aws_s3_bucket" "terraform-state-bucket" {
