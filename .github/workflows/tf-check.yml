@@ -56,6 +56,4 @@ jobs:
       # Run terrafrom plan
       - name: "Run - Terraform plan"
         run: terraform plan
-        env:
-          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
 

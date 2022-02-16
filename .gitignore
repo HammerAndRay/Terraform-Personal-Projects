@@ -29,3 +29,5 @@ Project4/.terraform/
 Project4/terraform.tfstate
 Project4/terraform.tfstate.backup
 Project4/errored.tfstate
+
+temp/
