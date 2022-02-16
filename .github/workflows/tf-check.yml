@@ -6,6 +6,9 @@ on:
     branches:
       - master
 
+defaults:
+  run:
+    working-directory: ./Project4
 jobs:
   terraform-plan:
     name: "Terraform Apply"
@@ -20,7 +23,6 @@ jobs:
       # By default, Terraform checks the home directory for a .aws folder with a credential file
       # Documentation: https://docs.aws.amazon.com/ses/latest/DeveloperGuide/create-shared-credentials-file.html
       - name: "Setup - Build AWS Credentials"
-        working-directory: ./Project4
         run: |
           mkdir -p ~/.aws
           echo "[default]" > ~/.aws/credentials
@@ -34,10 +36,8 @@ jobs:
 
       # Init pulls credentials from the .aws/credentials file by default
       - name: "Run - Terraform Init"
-        working-directory: ./Project4
         run: terraform init -input=false
 
       # Auto-approve prevents the requirement of human interaction
       - name: "Run - Terraform fmt -check"
-        working-directory: ./Project4
         run: terraform fmt -check -input=false
