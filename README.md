@@ -2,4 +2,6 @@
 
 * Project 1 - Create Ubuntu server and install apache2 + infrastructure 
 * Project 2 - N/A
-* Project 3 - Create Pi-Hole DNS sinkhole + infrastructure 
+* Project 3 - Create Pi-Hole DNS sinkhole + infrastructure
+![alt text](Project3/Img/DNS-Sink.png)
+

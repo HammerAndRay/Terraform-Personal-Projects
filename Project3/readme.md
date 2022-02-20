@@ -42,7 +42,7 @@
 This terraform script will auto create a pi-hole DNS server in AWS. It will create all the necessary infrastructure e.g VPC, route table, security group etc. Before launching the ec2 instance the server will run on. All the setting are pre-done and can be chagned in the user_data section.
 
 Make sure to change the security IP ranges to yours. As well the key pair name to your key pair. If you don't require to SSH into the instance you can remove this line from instance resource.
-
+![alt text](Img/DNS-Sink.png)
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 

@@ -30,3 +30,6 @@ Project4/terraform.tfstate.backup
 Project4/errored.tfstate
 
 temp/
+
+Project5/
+Project5/node_modules/
