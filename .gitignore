@@ -33,3 +33,5 @@ temp/
 
 Project5/
 Project5/node_modules/
+terraform.tfstate
+.terraform.tfstate.lock.info
